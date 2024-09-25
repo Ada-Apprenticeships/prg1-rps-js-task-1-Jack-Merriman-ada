@@ -1,13 +1,19 @@
 function rockPaperScissors(player1, player2) {
   const rockPaperScissorsStats = {
     "rock": {
-      "beats": ["scissors"],
+      "beats": ["scissors", "lizard"],
     },
     "paper": {
-      "beats": ["rock"],
+      "beats": ["rock", "spock"],
     },
     "scissors": {
-      "beats": ["paper"],
+      "beats": ["paper", "lizard"],
+    },
+    "lizard": {
+      "beats": ["spock", "paper"],
+    },
+    "spock": {
+      "beats": ["scissors", "rock"],
     },
   };
   if (player1 === player2) {
