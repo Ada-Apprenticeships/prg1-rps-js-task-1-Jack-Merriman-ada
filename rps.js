@@ -25,8 +25,6 @@ function rockPaperScissors(player1, player2) {
   }
 }
 
-//console.log(rockPaperScissors('paper', 'paper'))
-
 
 
 
