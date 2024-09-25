@@ -4,15 +4,14 @@ function rockPaperScissors(player1, player2) {
     "paper": ["rock", "spock"],
     "scissors": ["paper", "lizard"],
     "lizard": ["spock", "paper"],
-    "spock": ["scissors", "rock"],
+    "spock": ["scissors", "rock"]
     }
   if (player1 === player2) {
     return "draw";
   } else if (rockPaperScissorsBeatsStats[player1].includes(player2)) {
     return "player1";
-  } else {
-    return "player2";
   }
+  return "player2";
 };
 
 
