@@ -1,4 +1,4 @@
-function rockPaperScissors(player1, player2) {
+function rockPaperScissors(player1Choice, player2Choice) {
   const rockPaperScissorsBeatsStats = {
     "rock": ["scissors", "lizard"],
     "paper": ["rock", "spock"],
@@ -6,9 +6,9 @@ function rockPaperScissors(player1, player2) {
     "lizard": ["spock", "paper"],
     "spock": ["scissors", "rock"]
   };
-  if (player1 === player2) {
+  if (player1Choice === player2Choice) {
     return "draw";
-  } else if (rockPaperScissorsBeatsStats[player1].includes(player2)) {
+  } else if (rockPaperScissorsBeatsStats[player1Choice].includes(player2Choice)) {
     return "player1";
   }
   return "player2";
