@@ -1,5 +1,5 @@
 function rockPaperScissors(player1Choice, player2Choice) {
-  const rockPaperScissorsBeatsInfo = {
+  const RPSWinningCombos = {
     "rock": ["scissors", "lizard"],
     "paper": ["rock", "spock"],
     "scissors": ["paper", "lizard"],
@@ -8,7 +8,7 @@ function rockPaperScissors(player1Choice, player2Choice) {
   };
   if (player1Choice === player2Choice) {
     return "draw";
-  } else if (rockPaperScissorsBeatsInfo[player1Choice].includes(player2Choice)) {
+  } else if (RPSWinningCombos[player1Choice].includes(player2Choice)) {
     return "player1";
   }
   return "player2";
